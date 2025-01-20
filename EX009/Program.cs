@@ -4,16 +4,27 @@
     {
         static void Main(string[] args)
         {
-            int LadoA, LadoB, LadoC;
+            int ladoA, ladoB, ladoC;
 
             Console.Write("Digite o valor do lado A: ");
-            LadoA = Convert.ToInt32(Console.ReadLine());
+            ladoA = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Digite o valor do lado B: ");
-            LadoB = Convert.ToInt32(Console.ReadLine());
+            ladoB = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Digite o valor do lado C: ");
-            LadoC = Convert.ToInt32(Console.ReadLine());
+            ladoC = Convert.ToInt32(Console.ReadLine());
+
+            if ((ladoA < ladoB + ladoC) && (ladoB < ladoA + ladoC) && (ladoC < ladoA + ladoB))
+            {
+                Console.WriteLine("Os valores informados formam um triangulo.");
+            }
+            else
+            {
+                Console.WriteLine("Os valores inforados não forma um triangulo.");
+            }
+           
+
 
 
         }
