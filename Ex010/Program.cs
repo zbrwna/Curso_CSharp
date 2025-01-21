@@ -18,13 +18,12 @@
             {
                 aumento = (salario * 0.1) + salario;
             }
-
-            else (salario < 1250)
+            else
             {
                 aumento = salario * 0.15 + salario;
             }
 
-            Console.WriteLine("O salario final será .");
+            Console.WriteLine("O salario final será {0}.", aumento);
 
 
 
