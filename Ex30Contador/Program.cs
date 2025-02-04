@@ -24,6 +24,12 @@
         static void contagem(int i, int f, int p)
         {
             Escrever($"contagem de {i} até {f} decimal {p}.");
+            
+            if (p < 00)
+            {
+                p *= -1;
+            }
+
             if (i < f)
             {
                 int cont = i;
